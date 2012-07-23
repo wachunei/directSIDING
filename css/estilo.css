@@ -1,0 +1,69 @@
+@import url("fonts.css");
+* {margin: 0;}
+h1 {text-align: center;font-size: 23px;padding: 0;cursor: pointer;font-weight: 600;}
+h1:hover {color: #363636;}
+
+body {width: 200px;margin: 20px 0;background: -webkit-linear-gradient(#ffee54 60%, #fffa96 100%);font-family: "Signika";}
+body#full {width: auto;background: #ffee54;}
+body#full header {margin: 0 auto;}
+body#full h1 {font-size: 50px; cursor: default;}
+
+body#full.options h2 {font-weight: 300; border-bottom: 3px solid #f6f6f6; padding-bottom: 5px;}
+body#full.options #content, body#full.login #content {width: 500px; margin: 10px auto; background: white; border-radius: 4px; padding: 10px; box-shadow: 0px 1px 5px rgba(0,0,0,0.2)}
+body#full.options p {margin: 0.5em;}
+body#full.options footer {opacity: 0.2; font-size: 13px; font-weight: 300;}
+body#full.options footer small{opacity: 0.2;}
+body#full.options dl div { border-bottom: 1px solid rgba(127,127,127,0.15); padding: 10px 20px;}
+body#full.options dl dt {float: left; width: 200px; font-weight: 300;}
+body#full.options dl dd {float: right; width: 250px;}
+body#full.options dl dt label {display: inline; margin: 0; cursor: pointer;font-weight: 300;}
+body#full.options dl dt small {color:#c4c4c4; font-size: 11px; display: block; font-family: Helvetica,Arial,sans-serif; width: 170px;}
+body#full.options dl dt small:hover {color: #333;}
+body#full.options .disabled small:hover {color: #c4c4c4;}
+body#full.options dl div:after, #bottombar:after {clear:both;content:".";display:block;height:0;visibility:hidden;}
+body#full.options dl #rem_user:hover #forget {opacity: 1;}  
+body#full.options #forget {color: #a8a8a8; text-transform: uppercase; font-size: 14px; float: right; display: block; padding: 3px; cursor: pointer; opacity: 0.5; font-weight: 300;}
+body#full.options #forget:hover {color: white; background: #a8a8a8; border-radius: 4px; padding: 3px; opacity: 1;} 
+body#full.options #bottombar {padding-top: 10px;}
+body#full.options #version {text-align: left;font-family: monospace; font-size: 10px; float: left; opacity: 0.3; margin: 3px 0 0 5px;}
+body#full.options #version:hover {opacity: 1;}
+body#full.options #version a {color: #a4a4a4; text-decoration: none;background: url("../icon_lab.svg") left center no-repeat; padding: 3px 5px 5px 15px;}
+body#full.options #share {float: right; opacity: 0.1;}
+body#full.options #bottombar:hover #share {opacity: 1;}
+.fb-like {top: -4px;}
+body#full.options .disabled {color: #a8a8a8;}
+body#full.options #aviso_logueado {text-align: center; background: #ffffe6; border-top: 1px solid #efedd6; border-bottom: 1px solid #efedd6; font-weight: lighter;}
+body#full.options #aviso_logueado.alertoff {height: 0; padding: 0; margin: 0; overflow: hidden; border: none; opacity: 0;}
+
+body#full.autologin {background: #fff;}
+body#full.autologin #content {display: none;}
+
+.logLeft,.logRight {width: 200px; height: 200px;}
+.logLeft{float: left; border-right: 1px solid #ddd; padding:0 20px 0 20px; }.logRight{float: right;}
+body#full.login .user { background: #bbb; color: white;padding: 5px; margin: 20px ; text-align: center; border-radius: 4px;}
+body#full.login .user:hover {background: #777; cursor: pointer;}
+body#full.login section:after {clear:both;content:".";display:block;height:0;visibility:hidden;}
+
+#offline {color: white; position: absolute; background: url('../icon_warn.svg') 4px center no-repeat rgba(256,0,0,0.7); font-size: 13px; font-weight: lighter; bottom: 0; left: 0; padding: 5px 5px 5px 26px; display: block; width: 169px; z-index: 1; display: none;}
+#btnconfig {text-indent: -99999px;}
+#btnconfig {position: absolute; display: block; width: 20px; height: 20px; background: url('../icon_settings.svg') center center no-repeat; top: 0; left: 0; opacity: 0.4;}
+#btnconfig:hover {opacity: 1;}
+#btncerrar {position: absolute; display: block; width: 16px; height: 16px; top:1px; right: 1px; opacity: 0.4; background: url('../icon_close.svg') center center no-repeat; text-indent: -1000000px;}
+#btncerrar:hover {opacity: 1;}
+#content{margin: 0 auto; width: 150px;}
+label {display: block; margin: 10px 10px 0; font-size: 15px; font-weight: lighter;}
+input {width: 130px; display: block; height: 17px; font-size: 15px;}
+#btnsub {width: 120px; height: 20px; margin: 15px 15px 5px;}
+footer {color: #000;text-align: center; font-size: 10px; margin-top: 3px;opacity: 0.2;}
+input[type=checkbox] {width: 10px;}
+label[for=check_remember] {width: auto; margin:1px 35px 0; padding: 0; font-weight: lighter; font-size: 13px;}
+label[for=check_remember], input[type=checkbox] {display: inline-block;}
+
+/* transiciones */
+#share, #version,#aviso_logueado, #forget {
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
