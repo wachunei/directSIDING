@@ -2,9 +2,9 @@
 	"name": "directSIDING",
 	"version": "0.3.8",
 	"description": "Log-in directo al SIDING desde Chrome",
-	"icons": { 	"48": "icon_48.png",
-				"128": "icon_128.png",
-				"256": "icon_256.png"
+	"icons": { 	"48": "i/icon_48.png",
+				"128": "i/icon_128.png",
+				"256": "i/icon_256.png"
 				},
 	"incognito": "split",
 	"manifest_version": 2,
@@ -13,7 +13,7 @@
 			"page": "background.html"
 			},
 	"browser_action": {
-			"default_icon": "icon.png",
+			"default_icon": "i/icon.png",
 			"default_title": "Entrar al SIDING",
 			"default_popup": "index.html"
    			 },

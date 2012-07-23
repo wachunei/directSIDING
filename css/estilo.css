@@ -27,7 +27,7 @@ body#full.options #forget:hover {color: white; background: #a8a8a8; border-radiu
 body#full.options #bottombar {padding-top: 10px;}
 body#full.options #version {text-align: left;font-family: monospace; font-size: 10px; float: left; opacity: 0.3; margin: 3px 0 0 5px;}
 body#full.options #version:hover {opacity: 1;}
-body#full.options #version a {color: #a4a4a4; text-decoration: none;background: url("../icon_lab.svg") left center no-repeat; padding: 3px 5px 5px 15px;}
+body#full.options #version a {color: #a4a4a4; text-decoration: none;background: url("../i/icon_lab.svg") left center no-repeat; padding: 3px 5px 5px 15px;}
 body#full.options #share {float: right; opacity: 0.1;}
 body#full.options #bottombar:hover #share {opacity: 1;}
 .fb-like {top: -4px;}
@@ -44,11 +44,11 @@ body#full.login .user { background: #bbb; color: white;padding: 5px; margin: 20p
 body#full.login .user:hover {background: #777; cursor: pointer;}
 body#full.login section:after {clear:both;content:".";display:block;height:0;visibility:hidden;}
 
-#offline {color: white; position: absolute; background: url('../icon_warn.svg') 4px center no-repeat rgba(256,0,0,0.7); font-size: 13px; font-weight: lighter; bottom: 0; left: 0; padding: 5px 5px 5px 26px; display: block; width: 169px; z-index: 1; display: none;}
+#offline {color: white; position: absolute; background: url('../i/icon_warn.svg') 4px center no-repeat rgba(256,0,0,0.7); font-size: 13px; font-weight: lighter; bottom: 0; left: 0; padding: 5px 5px 5px 26px; display: block; width: 169px; z-index: 1; display: none;}
 #btnconfig {text-indent: -99999px;}
-#btnconfig {position: absolute; display: block; width: 20px; height: 20px; background: url('../icon_settings.svg') center center no-repeat; top: 0; left: 0; opacity: 0.4;}
+#btnconfig {position: absolute; display: block; width: 20px; height: 20px; background: url('../i/icon_settings.svg') center center no-repeat; top: 0; left: 0; opacity: 0.4;}
 #btnconfig:hover {opacity: 1;}
-#btncerrar {position: absolute; display: block; width: 16px; height: 16px; top:1px; right: 1px; opacity: 0.4; background: url('../icon_close.svg') center center no-repeat; text-indent: -1000000px;}
+#btncerrar {position: absolute; display: block; width: 16px; height: 16px; top:1px; right: 1px; opacity: 0.4; background: url('../i/icon_close.svg') center center no-repeat; text-indent: -1000000px;}
 #btncerrar:hover {opacity: 1;}
 #content{margin: 0 auto; width: 150px;}
 label {display: block; margin: 10px 10px 0; font-size: 15px; font-weight: lighter;}
