@@ -9,11 +9,11 @@ Extensión para el navegador Chrome que facilita el acceso al Sistema de Informa
 Instalar
 --------
 
-La extensión se encuntra disponible para instalar en la [Chrome Web Store][link webstore]
+La extensión se encuntra disponible para instalar en la [Chrome Web Store][link webstore].
 
 Licencia
 --------
-El código está bajo licencia [GPLv3](http://www.gnu.org/copyleft/gpl.html "Sitio oficial de la licencia")
+El código está bajo licencia [GPLv3](http://www.gnu.org/copyleft/gpl.html "Sitio oficial de la licencia").
 
 Otros
 ----

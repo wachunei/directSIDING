@@ -1,6 +1,6 @@
 {
 	"name": "directSIDING",
-	"version": "0.3.8",
+	"version": "0.3.9",
 	"description": "Log-in directo al SIDING desde Chrome",
 	"icons": { 	"48": "i/icon_48.png",
 				"128": "i/icon_128.png",
