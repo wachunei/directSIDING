@@ -8,6 +8,7 @@ function optsSiding() {
 	var autologin = localStorage.getItem("dS_autologin");
 	var autoingcursos = localStorage.getItem("dS_ingcursos");
 	var currenttab = localStorage.getItem("dS_currenttab")
+	var iconogris = localStorage.getItem("dS_gray");
 	
 	var recordado = (usuario != null);
 	if(recordado) {
@@ -18,6 +19,8 @@ function optsSiding() {
 	} else {
 		disableopts();
 	}
+
+	$("#icono_gris").attr("checked",(iconogris == "true"));
 	
 	$("#auto_login").change(function() {
 		if($(this).is(':checked')) {
@@ -48,6 +51,14 @@ function optsSiding() {
 		localStorage.clear();
 		disableopts();
 	});
+
+	/*$("#icono_gris").change(function(){
+		if($(this).is(':checked')) {
+			localStorage.setItem("dS_gray", "true");
+		} else {
+			localStorage.setItem("dS_gray", "false");
+		}
+	});*/
 
 	if(!navigator.onLine) {
 		$("#share").hide();

@@ -9,3 +9,7 @@ chrome.extension.onRequest.addListener(function (request, sender, sendResponse) 
 		sendResponse({}); //nada.
 	}
 });
+
+//if(localStorage.getItem("dS_gray") == "true"){
+	//chrome.browserAction.setIcon({"path":"../i/icon_gray_mini.png"});
+//}

@@ -27,8 +27,9 @@ function siding() {
 
 		/** Click en salir **/
 		$("a[href$='logout.phtml']").click(function(e){
-			e.preventDefault();
-			$.ajax($(this).attr("href"));
+			$.ajax($(this).attr("href")).done(function() {});
 			window.location.href = chrome.extension.getURL("login.html");
+			e.preventDefault();
+
 		});
  }
