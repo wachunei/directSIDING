@@ -18,5 +18,6 @@ El código está bajo licencia [GPLv3](http://www.gnu.org/copyleft/gpl.html "Sit
 Otros
 ----
 La primera versión fue desarrollada por [Pedro Pablo Aste Kompen](http://www.wachunei.com "Sitio personal de Pedro Aste").
+Actualmente también tiene versiones para [Firefox](http://bit.ly/dSIDINGff "DirectSIDING Firefox") y [Android](http://bit.ly/dSIDINGandroid "DirectSIDING Android").
 
 [link webstore]: https://chrome.google.com/webstore/detail/oojmieopbocohlebignkdhdnechocabc
