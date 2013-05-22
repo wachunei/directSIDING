@@ -5,7 +5,7 @@
 		<title>directSIDING</title>
 		<link rel="shortcut icon" type="image/x-icon" href="icon_48.png" />				
 		<link rel="stylesheet" href="css/estilo.css" type="text/css" media="screen"/>
-		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
 		<script type="text/javascript" src="js/js.js"></script>
 	</head>
 	
@@ -13,15 +13,16 @@
 		<a href="#" id="btncerrar">Cerrar</a>
 		<a href="#" id="btnconfig">Opciones</a>
 		<span id="offline">No est&aacute;s conectado a internet</span>
+		<span id="loader" class="hidden"></span>
 
 				<header>
 						<h1>directSIDING</h1>
 				</header>
 		
 			<section id="content">
-				<form action="https://intrawww.ing.puc.cl/siding/index.phtml" method="post" name="LoginForm" id="form-siding" target="_blank" autocomplete="off">
-	                <input id="user-siding" type="text" name="login" size="10" maxlength="20" tabindex="1" placeholder="Usuario UC" />
-	                <input id="password-siding" type="password" name="passwd" size="10" maxlength="40" tabindex="2" placeholder="Contraseña"/>
+				<form>
+	                <input id="user" type="text"size="10" tabindex="1" placeholder="Usuario UC" />
+	                <input id="password" type="password" size="10" tabindex="2" placeholder="Contraseña"/>
 
 	               <label for="check_remember" id="remember_label"><input type="checkbox" id="check_remember" name="recuerdo" value="checked" tabindex="3" /> Recordar </label>
 	                <input type="submit" id="btnsub" value="Entrar" tabindex="4"/>

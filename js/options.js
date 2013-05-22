@@ -52,13 +52,7 @@ function optsSiding() {
 		disableopts();
 	});
 
-	/*$("#icono_gris").change(function(){
-		if($(this).is(':checked')) {
-			localStorage.setItem("dS_gray", "true");
-		} else {
-			localStorage.setItem("dS_gray", "false");
-		}
-	});*/
+
 
 	if(!navigator.onLine) {
 		$("#share").hide();
