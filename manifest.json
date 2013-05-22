@@ -1,6 +1,6 @@
 {
 	"name": "directSIDING",
-	"version": "0.3.9",
+	"version": "0.4",
 	"description": "Log-in directo al SIDING desde Chrome",
 	"manifest_version": 2,
 	"icons": { 	"48": "i/icon_48.png",
@@ -9,19 +9,12 @@
 				},
 	"incognito": "split",
 	"options_page": "options.html",
-	"background" : {
-			"page": "background.html"
-			},
 	"browser_action": {
 			"default_icon": "i/icon.png",
 			"default_title": "Entrar al SIDING",
 			"default_popup": "index.html"
    			 },
-   	"content_scripts": [
-    	{
-	      "matches": ["https://intrawww.ing.puc.cl/siding/*"],
-	      "exclude_matches": ["https://intrawww.ing.puc.cl/siding/redireccion.php"],
-	      "js": ["js/jquery-1.7.2.js", "js/siding.js"]
-	    }
-    ]
-}
+	"permissions": [
+		"https://*.ing.puc.cl/"
+	]
+   }
