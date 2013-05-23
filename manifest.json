@@ -1,6 +1,6 @@
 {
 	"name": "directSIDING",
-	"version": "0.4",
+	"version": "0.4.1",
 	"description": "Log-in directo al SIDING desde Chrome",
 	"manifest_version": 2,
 	"icons": { 	"48": "i/icon_48.png",
@@ -17,4 +17,4 @@
 	"permissions": [
 		"https://*.ing.puc.cl/"
 	]
-   }
+}

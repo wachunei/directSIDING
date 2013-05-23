@@ -4,24 +4,26 @@ $(document).ready(function() {
 
 function optsSiding() { 
 
-	var usuario = localStorage.getItem("dS_user");
+	// Variables
+	var user = localStorage.getItem("dS_user");
 	var autologin = localStorage.getItem("dS_autologin");
 	var autoingcursos = localStorage.getItem("dS_ingcursos");
 	var currenttab = localStorage.getItem("dS_currenttab")
-	var iconogris = localStorage.getItem("dS_gray");
-	
-	var recordado = (usuario != null);
-	if(recordado) {
-		$("#rem_user").prepend(usuario);
-		$("#auto_login").attr("checked",(autologin=="true"));
-		$("#auto_ingcursos").attr("checked",(autoingcursos == "true"));
-		$("#currenttab").attr("checked",(currenttab == "true"));
+	var remembered = (localStorage.getItem("dS_remember") === "true");
+
+	// Load saved data
+	if(remembered) {
+		$("#rem_user").prepend(user);
+		$("#auto_login").attr("checked",(autologin==="true"));
+		$("#auto_ingcursos").attr("checked",(autoingcursos === "true"));
+		$("#currenttab").attr("checked",(currenttab === "true"));
 	} else {
 		disableopts();
 	}
 
-	$("#icono_gris").attr("checked",(iconogris == "true"));
-	
+	// Change Options
+
+	// Automatic login
 	$("#auto_login").change(function() {
 		if($(this).is(':checked')) {
 			localStorage.setItem("dS_autologin", "true");
@@ -29,7 +31,8 @@ function optsSiding() {
 			localStorage.setItem("dS_autologin", "false");
 		}
 	});
-	
+
+	// IngCursos redirect
 	$("#auto_ingcursos").change(function() {
 		if($(this).is(':checked')) {
 			localStorage.setItem("dS_ingcursos", "true");
@@ -38,6 +41,7 @@ function optsSiding() {
 		}
 	});
 	
+	// Use the same tab
 	$("#currenttab").change(function() {
 		if($(this).is(':checked')) {
 			localStorage.setItem("dS_currenttab", "true");
@@ -45,19 +49,14 @@ function optsSiding() {
 			localStorage.setItem("dS_currenttab", "false");
 		}
 	});
-	
 
+	// Clear data
 	$("#forget").click(function(e) {
 		localStorage.clear();
 		disableopts();
 	});
 
-
-
-	if(!navigator.onLine) {
-		$("#share").hide();
-	}
-
+	// Clear data
 	function disableopts() {
 		$("#rem_user").html("Ninguno").addClass("disabled");
 		$("#forget").hide();
@@ -66,5 +65,5 @@ function optsSiding() {
 		$("#currenttab").attr("disabled","disabled").attr("checked",false).closest("div").addClass("disabled");
 		$("#aviso_logueado").removeClass("alertoff");
 	}
-	
+
 }

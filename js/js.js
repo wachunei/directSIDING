@@ -34,7 +34,7 @@ function directSiding() {
 	
 	// Check both inputs 
     $('input').keyup(function (e) {
-		checkea_boton();
+		checkButton();
     });
 	
 	// Send Form
@@ -46,8 +46,8 @@ function directSiding() {
 		login(user,pass,true);
 	});
 	
-
-	function checkea_boton() {
+	// Check inputs not empty
+	function checkButton() {
 		user = $("#user").val();
 		pass = $("#password").val();
 		if (user.length !== 0 && pass.length !== 0) {
@@ -57,7 +57,7 @@ function directSiding() {
 		}
 	}
 	
-	
+	// Load previous data
 	function cargaCookies() {
 		if (get_opcion("dS_remember") === "true") {
 			$("#user").val(get_opcion("dS_user"));
@@ -68,28 +68,36 @@ function directSiding() {
 		}
 	}
 
+	// Save data
 	function guardaCookies() {
 		if ($("#check_remember").is(":checked") === true) {
-			localStorage.setItem("dS_user", $("#user").val());
-			localStorage.setItem("dS_pass", $("#password").val());
-			localStorage.setItem("dS_remember", "true");
+			set_opcion("dS_user", $("#user").val());
+			set_opcion("dS_pass", $("#password").val());
+			set_opcion("dS_remember", "true");
 		} else {
 			localStorage.clear();
 		}
 		
 	}
 
+	// Login POST
 	function login(user,pass,open) {
 		$("form").addClass("hidden");
 		$("#loader").removeClass("hidden");
-		$.get(url_home,{"login":user,"passwd":pass}, function(data) {
-			if(open){
-				openTab();
-				window.close();
-			}
-		});
+
+		$.post(
+			url_home,
+			{"login":user,"passwd":pass},
+			function (data, status, xhr) {
+				if(open){
+					openTab();
+					window.close();
+				}
+    		}
+    	);
 	}
 
+	// Open Tab after login
 	function openTab() {
 		if (get_opcion("dS_ingcursos") === "true") {
 			url_selected = url_cursos;
