@@ -52,4 +52,5 @@ form.hidden {opacity: 0;z-index: -1;}
 #btnsub.disabled:hover {background:-webkit-linear-gradient(#ededed,#dfdfdf);color: #ccc;}
 #btnsub {background:-webkit-linear-gradient(#ededed,#dfdfdf);border-radius:3px;border:1px solid #dcdcdc;display:block;color: #777;font-size:14px;padding:4px 15px;margin: 5px auto;cursor: pointer;}
 #btnsub:hover {background:-webkit-linear-gradient(#dfdfdf,#ededed); border-color: #ccc; color:#999;}
-#version, #aviso_logueado, #forget, form, #loader, #btnconfig, #btncerrar, #btnsub {transition: all 0.1s linear;}
+#version {transition: opacity 0.1s linear;}
+#aviso_logueado, #forget, form, #loader, #btnconfig, #btncerrar, #btnsub {transition: all 0.1s linear;}

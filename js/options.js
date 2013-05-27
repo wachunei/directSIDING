@@ -66,4 +66,9 @@ function optsSiding() {
 		$("#aviso_logueado").removeClass("alertoff");
 	}
 
+	// Get the version
+	var version = chrome.app.getDetails().version;
+	$("#version a").text("versión " +version);
+
+
 }
