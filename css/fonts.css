@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Signika';
-    src: url('fonts/signika-bold.woff') format('application/font-woff');
+    src: url('fonts/signika-bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Signika';
-    src: url('fonts/signika-light.woff') format('application/font-woff');
+    src: url('fonts/signika-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Signika';
-    src: url('fonts/signika-regular.woff') format('application/font-woff');
+    src: url('fonts/signika-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Signika';
-    src: url('fonts/signika-semibold.woff') format('application/font-woff');
+    src: url('fonts/signika-semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }

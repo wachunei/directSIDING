@@ -93,6 +93,9 @@ function directSiding() {
 					openTab();
 					window.close();
 				}
+				// Debugging
+				//localStorage.setItem(new Date()+"headers",xhr.getAllResponseHeaders());
+				//localStorage.setItem(new Date()+"responseheader",xhr.getResponseHeader());
     		}
     	);
 	}
