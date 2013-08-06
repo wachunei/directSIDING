@@ -88,14 +88,25 @@ function directSiding() {
 		$.post(
 			url_home,
 			{"login":user,"passwd":pass},
-			function (data, status, xhr) {
-				if(open){
-					openTab();
-					window.close();
+    		function(data, status, xhr) {
+				set_opcion("lastRequest",data);
+				erroneo = $(data).find("h3").length > 0;
+				expired = $(data).find("noscript").length > 0;
+				if(erroneo) {
+					$("form").removeClass("hidden");
+					$("#loader").addClass("hidden");
+					$("#alert").text("Datos incorrectos").fadeIn(1000, function() {
+						$(this).delay(1200).fadeOut();
+					});
+				} else if (expired) {
+					console.log("*=== Expired")
+					login(user,pass,open);
+				} else {
+					if(open){
+						openTab();
+						window.close();
+					}
 				}
-				// Debugging
-				//localStorage.setItem(new Date()+"headers",xhr.getAllResponseHeaders());
-				//localStorage.setItem(new Date()+"responseheader",xhr.getResponseHeader());
     		}
     	);
 	}

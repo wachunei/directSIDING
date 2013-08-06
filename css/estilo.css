@@ -32,7 +32,7 @@ body#full .disabled {color: #a8a8a8;}
 body#full #aviso_logueado {text-align: center; background: #ffffe6; border-top: 1px solid #efedd6; border-bottom: 1px solid #efedd6; font-weight: lighter;}
 body#full #aviso_logueado.alertoff {height: 0; padding: 0; margin: 0; overflow: hidden; border: none; opacity: 0;}
 
-#offline {color: white; position: absolute; background: url('../i/icon_warn.svg') 4px center no-repeat rgba(256,0,0,0.7); font-size: 13px; font-weight: lighter; bottom: 0; left: 0; padding: 5px 5px 5px 26px; display: block; width: 169px; z-index: 1; display: none;}
+#offline,#alert {color: white; position: absolute; background: url('../i/icon_warn.svg') 4px center no-repeat rgba(256,0,0,0.7); font-size: 13px; font-weight: lighter; bottom: 0; left: 0; padding: 5px 5px 5px 26px; display: block; width: 169px; z-index: 3; display: none;}
 #btnconfig {text-indent: -99999px;}
 #btnconfig {position: absolute; display: block; width: 20px; height: 20px; background: url('../i/icon_settings.svg') center center no-repeat; top: 0; left: 0; opacity: 0.4;}
 #btnconfig:hover {opacity: 1;}

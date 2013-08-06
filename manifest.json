@@ -1,6 +1,6 @@
 {
 	"name": "directSIDING",
-	"version": "0.4.2",
+	"version": "0.4.3",
 	"description": "Log-in directo al SIDING desde Chrome",
 	"manifest_version": 2,
 	"icons": { 	
@@ -10,9 +10,10 @@
 				"256": "i/icon_256.png"
 				},
 	"incognito": "split",
-	"background": {
-		"page": "background.html"
-	},
+	"content_scripts" : [{
+			"matches": ["https://*.ing.puc.cl/*"],
+			"js": ["js/jquery-2.0.0.min.js", "js/background.js"]
+			}],
 	"options_page": "options.html",
 	"browser_action": {
 			"default_icon": "i/icon.png",
